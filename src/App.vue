@@ -21,22 +21,10 @@ export default {
 	data() {
 		return {
 			ToDoItems: [
-				{
-					label: "Learn vue",
-					done: false
-				},
-				{
-					label: "Create vue project from CLI",
-					done: true
-				},
-				{
-					label: "Have fun",
-					done: true
-				},
-				{
-					label: "Create a To-Do list",
-					done: false
-				}
+				{ label: "Learn vue", done: false },
+				{ label: "Create vue project from CLI", done: true },
+				{ label: "Have fun", done: true },
+				{ label: "Create a To-Do list", done: false },
 			]
 		};
 	},
