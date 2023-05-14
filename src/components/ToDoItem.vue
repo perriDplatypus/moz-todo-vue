@@ -16,6 +16,11 @@
 				default: false,
 				type: Boolean
 			},
-		}
+		},
+		data() {
+			return {
+				isDone: this.done,
+			};
+		},
 	};
 </script>
