@@ -2,8 +2,8 @@
 	<div id="app">
 		<h1>To-Do List</h1>
 		<ul>
-			<li>
-				<to-do-item label="My To-Do Item" :done="true"></to-do-item>
+			<li v-for="item in ToDoItems" :key="item.id">
+				<to-do-item :label="item.label" :done="true" :id="item.id"></to-do-item>
 			</li>
 		</ul>
 	</div>
@@ -17,6 +17,28 @@ export default {
 	name: "app",
 	components: {
 		ToDoItem,
+	},
+	data() {
+		return {
+			ToDoItems: [
+				{
+					label: "Learn vue",
+					done: false
+				},
+				{
+					label: "Create vue project from CLI",
+					done: true
+				},
+				{
+					label: "Have fun",
+					done: true
+				},
+				{
+					label: "Create a To-Do list",
+					done: false
+				}
+			]
+		};
 	},
 };
 </script>
